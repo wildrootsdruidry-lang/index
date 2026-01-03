@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grove Directory | The Wildroots Hedge</title>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --earth-green: #2e4632;
+            --deep-oak: #3e2723;
+            --spirit-gold: #c5a059;
+            --mist: #f5f5f1;
+            --white: #ffffff;
+            --parchment: #fdfaf3;
+        }
+
+        body {
+            margin: 0; padding: 0;
+            font-family: 'Crimson Text', serif;
+            background-color: var(--mist);
+            color: var(--deep-oak);
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                        url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 40px 20px;
+            text-align: center;
+            color: var(--white);
+        }
+
+        .leaf-icon-small { width: 60px; height: 60px; border-radius: 50%; border: 1px solid var(--spirit-gold); margin-bottom: 10px; }
+
+        .dir-nav {
+            background: var(--deep-oak);
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .dir-nav a {
+            color: var(--spirit-gold);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .order-container { max-width: 1100px; margin: 40px auto; padding: 20px; }
+        
+        .order-header {
+            border-bottom: 2px solid var(--spirit-gold);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+        }
+
+        .grove-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .grove-card {
+            background: var(--white);
+            padding: 20px;
+            border-left: 4px solid var(--earth-green);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .grove-card h4 { margin: 0 0 5px 0; color: var(--earth-green); }
+        .grove-meta { font-size: 0.85rem; color: #666; font-style: italic; margin-bottom: 10px; }
+        .tag { 
+            display: inline-block; 
+            background: var(--parchment); 
+            padding: 2px 8px; 
+            font-size: 0.75rem; 
+            border: 1px solid var(--spirit-gold);
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+
+        .visit-link {
+            margin-top: auto;
+            padding-top: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: var(--spirit-gold);
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        footer { text-align: center; padding: 40px 20px; background: var(--deep-oak); color: var(--mist); margin-top: 50px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEimU237FaFJLdN2EPlpyQcmSZ4RH2gw8dgm2McYh92-kT--wao_AtYZ4qurf-jSXanWzAJcPYUv7TgbOaxkUl6j6tME_b-YG01KAoEr_OP_QMMIYzKo5RqbQyNsbzGHinjpLGUn6JLuYb2pUWwR5G_XxpiuTmwI1B0nFsA0B9MD_NaT92cDWysMg5wYqRE" class="leaf-icon-small" alt="Tulip Poplar Leaf">
+        <h1>Grove Directory</h1>
+        <p>A Curated Registry of American Druid Orders & Resources</p>
+    </header>
+
+    <nav class="dir-nav">
+        <a href="#adf">ADF</a>
+        <a href="#obod">OBOD</a>
+        <a href="#aoda">AODA</a>
+        <a href="#tennessee">Tennessee Hearth</a>
+        <a href="#nemeton">Digital Nemeton</a>
+    </nav>
+
+    <div class="order-container">
+        <div id="adf" class="order-header">
+            <h2>Ár nDraíocht Féin (ADF)</h2>
+            <p><i>Scholarship-based Indo-European Reconstructionism</i></p>
+        </div>
+        <div class="grove-grid">
+            <div class="grove-card">
+                <h4>CedarLight Grove</h4>
+                <div class="grove-meta">Baltimore, MD</div>
+                <p>A flagship congregation with permanent sanctuary space and a focus on community service.</p>
+                <div><span class="tag">Open Public Rituals</span><span class="tag">Eclectic Indo-European</span></div>
+                <a href="https://cedarlightgrove.org/" target="_blank" class="visit-link">Visit Website →</a>
+            </div>
+            <div class="grove-card">
+                <h4>Three Cranes Grove</h4>
+                <div class="grove-meta">Columbus, OH</div>
+                <p>Specializing in Gaulish Celtic liturgy and deep historical research.</p>
+                <div><span class="tag">Gaulish Focus</span><span class="tag">Scholarship</span></div>
+                <a href="https://threecranes.org/" target="_blank" class="visit-link">Visit Website →</a>
+            </div>
+            <div class="grove-card">
+                <h4>Nine Waves Protogrove</h4>
+                <div class="grove-meta">Houston, TX</div>
+                <p>Focusing on Northern/Norse hearth cultures within the ADF framework.</p>
+                <div><span class="tag">Northern Path</span><span class="tag">Public Liturgy</span></div>
+                <a href="https://prairiedruid.com/" target="_blank" class="visit-link">Visit Website →</a>
+            </div>
+        </div>
+
+        <div id="obod" class="order-header" style="margin-top: 60px;">
+            <h2>Order of Bards, Ovates & Druids (OBOD)</h2>
+            <p><i>The Experiential Path of Poetry, Healing, and Wisdom</i></p>
+        </div>
+        <div class="grove-grid">
+            <div class="grove-card">
+                <h4>Raven on the Water Grove</h4>
+                <div class="grove-meta">Dansville, NY</div>
+                <p>A mature chartered grove hosting major seasonal ceremonies in Western NY.</p>
+                <div><span class="tag">Chartered Grove</span><span class="tag">Grade Ceremonies</span></div>
+                <a href="https://hearth.druidry.org/circles/raven-on-the-water-grove" target="_blank" class="visit-link">Visit Website →</a>
+            </div>
+            <div class="grove-card">
+                <h4>Sacramento Grove of the Oak</h4>
+                <div class="grove-meta">Sacramento, CA</div>
+                <p>Known for fire-relief activism and robust community presence.</p>
+                <div><span class="tag">Non-Profit</span><span class="tag">Social Action</span></div>
+                <a href="https://sacramento365.com/organization/sacramento-grove-of-the-oak-inc/" target="_blank" class="visit-link">Visit Website →</a>
+            </div>
+            <div class="grove-card">
+                <h4>Circle of the Woodland Path</h4>
+                <div class="grove-meta">Shawnee, OK</div>
+                <p>Highly active in regional Pagan Pride and solitary mentorship.</p>
+                <div><span class="tag">Public Events</span><span class="tag">Bardic Arts</span></div>
+                <a href="https://www.facebook.com/CircleoftheWoodlandPath/" target="_blank" class="visit-link">Visit Website →</a>
+            </div>
+        </div>
+
+        <div id="aoda" class="order-header" style="margin-top: 60px;">
+            <h2>Ancient Order of Druids in America (AODA)</h2>
+            <p><i>Bioregionalism and The Great Work of Land Healing</i></p>
+        </div>
+        <div class="grove-grid">
+            <div class="grove-card">
+                <h4>Hemlock & Hazel Grove</h4>
+                <div class="grove-meta">Western PA / Digital</div>
+                <p>Led by Dana O'Driscoll, focused on permaculture and Appalachian Ogham.</p>
+                <div><span class="tag">Land Healing</span><span class="tag">Bioregional</span></div>
+                <a href="https://thedruidsgarden.com/" target="_blank" class="visit-link">Visit Website →</a>
+            </div>
+            <div class="grove-card">
+                <h4>San Fhàsach Study Group</h4>
+                <div class="grove-meta">Washington, D.C. Area</div>
+                <p>An urban study group exploring the intersection of Druidry and social ecology.</p>
+                <div><span class="tag">Study Group</span><span class="tag">Social Justice</span></div>
+                <a href="https://mifpoet.com/" target="_blank" class="visit-link">Visit Website →</a>
+            </div>
+        </div>
+
+        <div id="tennessee" class="order-header" style="margin-top: 60px;">
+            <h2>The Tennessee Hearth</h2>
+            <p><i>Appalachian Artisans, Herbalists, and Sanctuaries</i></p>
+        </div>
+        <div class="grove-grid">
+            <div class="grove-card">
+                <h4>AromaG’s Botanica</h4>
+                <div class="grove-meta">Nashville, TN</div>
+                <p>Staffed by practitioners; a massive resource for herbs, oils, and ritual supplies.</p>
+                <a href="https://www.aromags.com/" target="_blank" class="visit-link">Visit Website →</a>
+            </div>
+            <div class="grove-card">
+                <h4>Inner Perfect</h4>
+                <div class="grove-meta">Knoxville, TN</div>
+                <p>A community-centered apothecary and metaphysical storefront.</p>
+                <a href="https://www.innerperfect.com/" target="_blank" class="visit-link">Visit Website →</a>
+            </div>
+            <div class="grove-card">
+                <h4>The Mustard Seed</h4>
+                <div class="grove-meta">Newport, TN</div>
+                <p>Vital local bulk herb and organic resource near the Smokies.</p>
+                <a href="https://www.themustardseedonline.com/" target="_blank" class="visit-link">Visit Website →</a>
+            </div>
+            <div class="grove-card">
+                <h4>Dragon Haven</h4>
+                <div class="grove-meta">Crossville, TN</div>
+                <p>A dedicated Pagan campground and sanctuary for regional gatherings.</p>
+                <a href="https://www.dragonhaventn.org/" target="_blank" class="visit-link">Visit Website →</a>
+            </div>
+        </div>
+
+        <div id="nemeton" class="order-header" style="margin-top: 60px;">
+            <h2>The Digital Nemeton</h2>
+            <p><i>Podcasts, Blogs, and Academic Resources</i></p>
+        </div>
+        <div class="grove-grid">
+            <div class="grove-card">
+                <h4>DruidCast</h4>
+                <div class="grove-meta">OBOD Official Podcast</div>
+                <p>The standard-bearer for Druidic audio, featuring music and philosophy.</p>
+                <a href="https://druidcast.libsyn.com/" target="_blank" class="visit-link">Listen Online →</a>
+            </div>
+            <div class="grove-card">
+                <h4>Blúiríní Béaloidis</h4>
+                <div class="grove-meta">National Folklore Collection (Ireland)</div>
+                <p>Essential archival recordings of native Irish folklore and customs.</p>
+                <a href="https://podcastrepublic.net/podcast/1227741013" target="_blank" class="visit-link">Listen Online →</a>
+            </div>
+            <div class="grove-card">
+                <h4>The Irish Pagan School</h4>
+                <div class="grove-meta">Lora O'Brien & Jon O'Sullivan</div>
+                <p>Native Irish perspectives on mythology, history, and practice.</p>
+                <a href="https://irishpaganschoolpodcast.buzzsprout.com/" target="_blank" class="visit-link">Explore Courses →</a>
+            </div>
+            <div class="grove-card">
+                <h4>CELT Archive</h4>
+                <div class="grove-meta">University College Cork</div>
+                <p>Digital library of primary literary and historical Irish texts.</p>
+                <a href="https://celt.ucc.ie/" target="_blank" class="visit-link">Search Archive →</a>
+            </div>
+        </div>
+
+        <div id="toolkit" class="order-header" style="margin-top: 60px;">
+            <h2>The Solitary's Toolkit</h2>
+            <p><i>Resources for the Independent Path</i></p>
+        </div>
+        <div class="grove-grid">
+            <div class="grove-card">
+                <h4>Training Curricula Comparison</h4>
+                <p>Analyze the different paths of OBOD, AODA, and ADF distance learning.</p>
+                <a href="https://druidry.org/get-involved/groups-groves/solitary-support" target="_blank" class="visit-link">Compare Training →</a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Visit the main blog: <a href="https://tcloahd.blogspot.com/" target="_blank" style="color: var(--spirit-gold); text-decoration: none;">Wild Roots Sanctuary</a></p>
+        <p style="margin-top: 20px;">&copy; 2026 The Wildroots Hedge. Walk the Earth in Peace.</p>
+    </footer>
+
+</body>
+</html>

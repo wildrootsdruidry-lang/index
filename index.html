@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Wildroots Hedge | A Druidic Repository</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --earth-green: #2e4632;
+            --deep-oak: #3e2723;
+            --spirit-gold: #c5a059;
+            --mist: #f5f5f1;
+            --white: #ffffff;
+            --parchment: #fdfaf3;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Crimson Text', serif;
+            background-color: var(--mist);
+            color: var(--deep-oak);
+            line-height: 1.6;
+        }
+
+        /* --- HERO SECTION --- */
+        header {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: var(--white);
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        header h1 { font-size: clamp(2.2rem, 8vw, 4rem); margin: 0; letter-spacing: 5px; text-transform: uppercase; }
+        header p { font-size: clamp(1rem, 4vw, 1.3rem); color: var(--spirit-gold); font-style: italic; margin-top: 10px; }
+
+        /* --- LEAF ICON STYLING --- */
+        .leaf-icon {
+            margin-top: 25px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 2px solid var(--spirit-gold);
+            padding: 5px;
+            background: rgba(0,0,0,0.3);
+            box-shadow: 0 0 20px rgba(197, 160, 89, 0.5);
+            object-fit: contain;
+        }
+
+        /* --- THE APERTURE --- */
+        .aperture { background-color: var(--white); padding: 60px 20px; text-align: center; border-bottom: 1px solid #ddd; }
+        .aperture-content { max-width: 800px; margin: 0 auto; }
+        .aperture p { font-size: clamp(1.2rem, 3vw, 1.4rem); line-height: 1.8; font-style: italic; margin: 0; }
+
+        /* --- OGHAM OF THE MONTH --- */
+        .ogham-monthly {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 30px;
+            border: 2px solid var(--spirit-gold);
+            background-color: var(--parchment);
+            text-align: center;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        /* --- NAVIGATION PILLARS --- */
+        .pillar-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .pillar-card {
+            background: var(--white);
+            padding: 35px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            text-align: center;
+            text-decoration: none;
+            color: inherit;
+            border-bottom: 4px solid var(--earth-green);
+            transition: all 0.3s ease;
+        }
+        .pillar-card:hover { transform: translateY(-5px); border-bottom-color: var(--spirit-gold); }
+
+        /* --- JOURNAL SECTION --- */
+        .journal-section { background-color: #ededeb; padding: 60px 20px; }
+        .journal-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 30px auto;
+        }
+        .journal-entry {
+            background: var(--parchment);
+            border: 1px solid #dcdcdc;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .journal-img { height: 220px; background-size: cover; background-position: center; }
+        .journal-content { padding: 25px; flex-grow: 1; }
+        .journal-entry h4 { margin: 0 0 12px 0; font-size: 1.5rem; color: var(--deep-oak); }
+        .read-more { color: var(--earth-green); font-weight: bold; text-decoration: none; display: inline-block; margin-top: 15px; }
+
+        /* --- FOOTER --- */
+        footer { text-align: center; padding: 60px 20px; background: var(--deep-oak); color: var(--mist); }
+        .footer-link { color: var(--spirit-gold); text-decoration: none; font-weight: bold; }
+
+        @media (max-width: 768px) {
+            .pillar-container, .journal-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>The Wildroots Hedge</h1>
+        <p>A Druidic Repository & Human Rewilding Storehouse</p>
+        
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEimU237FaFJLdN2EPlpyQcmSZ4RH2gw8dgm2McYh92-kT--wao_AtYZ4qurf-jSXanWzAJcPYUv7TgbOaxkUl6j6tME_b-YG01KAoEr_OP_QMMIYzKo5RqbQyNsbzGHinjpLGUn6JLuYb2pUWwR5G_XxpiuTmwI1B0nFsA0B9MD_NaT92cDWysMg5wYqRE" alt="Tulip Poplar Leaf" class="leaf-icon">
+    </header>
+
+    <section class="aperture">
+        <div class="aperture-content">
+            <p>"Between the hearth and the deep wood lies the Hedge. Here, we gather the fragmented lore of the ancestors and the practical skills of the wild-hearted. Wildroots is a digital grove dedicated to those seeking to unlearn the cage and reconnect with the pulse of the living earth."</p>
+            <div style="margin-top: 25px; font-size: 1.5rem;">🌿</div>
+        </div>
+    </section>
+
+    <section class="ogham-monthly">
+        <svg width="100" height="60" viewBox="0 0 100 60" style="margin-bottom: 10px; display: block; margin: auto;">
+            <line x1="10" y1="30" x2="90" y2="30" stroke="#2e4632" stroke-width="4" />
+            <line x1="50" y1="30" x2="70" y2="10" stroke="#2e4632" stroke-width="4" />
+            <line x1="10" y1="20" x2="10" y2="40" stroke="#c5a059" stroke-width="3" />
+            <line x1="90" y1="20" x2="90" y2="40" stroke="#c5a059" stroke-width="3" />
+        </svg>
+        <h3>Ogham of the Month: Beithe (Birch)</h3>
+        <p><i>The Season of Beginnings and Purification.</i></p>
+        <p style="font-weight: bold; color: var(--earth-green); margin-top: 15px;">"What are you shedding to make room for new growth?"</p>
+    </section>
+
+    <div class="pillar-container">
+        <a href="druidry.html" class="pillar-card">
+            <h3>Hedge Druidry</h3>
+            <p>Philosophy, ancestry, and the solitary path between the worlds.</p>
+            <span style="color: var(--spirit-gold); font-weight: bold;">ENTER &rarr;</span>
+        </a>
+        <a href="rewilding.html" class="pillar-card">
+            <h3>Human Rewilding</h3>
+            <p>40 years of feral wisdom: returning to our ancestral human state.</p>
+            <span style="color: var(--spirit-gold); font-weight: bold;">ENTER &rarr;</span>
+        </a>
+        <a href="directory.html" class="pillar-card">
+            <h3>Grove Directory</h3>
+            <p>A curated registry of American Druid Groves and Artisans.</p>
+            <span style="color: var(--spirit-gold); font-weight: bold;">ENTER &rarr;</span>
+        </a>
+    </div>
+
+    <section class="journal-section">
+        <div style="text-align: center; max-width: 800px; margin: auto;">
+            <h2>Featured Journal Entries</h2>
+        </div>
+        <div class="journal-grid">
+            <div class="journal-entry">
+                <div class="journal-img" style="background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEgMYTaV_qwCoLwKICWfu3sR3LChDeJpiX9qW9SQXr2nz2oq6AeIowF9RuAMRs10kt_sdra6_apmB3LSSuwOmWGtK4Lm0V8Pa733G5CBy3TpNnepf3XD7-giKNeZHNlUojkmaQ2--W4kKQzW9yx_CpvxWPKNmN5IQZh-kYWocAHtIdFR1MdlWocL2Pah7Ns');"></div>
+                <div class="journal-content">
+                    <h4>Re-membering the Deer Mother</h4>
+                    <p>Unearthing the primordial heart of the North and the shamanistic roots of our winter ancestors.</p>
+                    <a href="https://tcloahd.blogspot.com/2025/12/re-membering-deer-mother-journey-back.html?m=1" target="_blank" class="read-more">Read on the Blog &rarr;</a>
+                </div>
+            </div>
+            <div class="journal-entry">
+                <div class="journal-img" style="background-image: url('https://blogger.googleusercontent.com/img/a/AVvXsEh9HQ5DphrcIDjYbLXtzaA7sovq4jLt0wOded335ftlckO4HmuvnwdVc7r4L1nNNlypHzbLzfMOcHQKZTQ6UyDOyeuTvt2q_xIZklXTbi861eU1_rOm5QcwGg6FLeu91WhjAt-wqQwnYBf6izkVDQxUYvOCXuhOYTJBDb0h_q_0yN5a9U6ywqNSpLxGQEE');"></div>
+                <div class="journal-content">
+                    <h4>The Hedge and the Gates</h4>
+                    <p>Unearthing the Ancient Kinship Between Druidry and the Witches' Compass.</p>
+                    <a href="https://tcloahd.blogspot.com/2025/12/the-hedge-and-gates-unearthing-ancient.html?m=1" target="_blank" class="read-more">Read on the Blog &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Visit the main blog: <a href="https://tcloahd.blogspot.com/" target="_blank" class="footer-link">Wild Roots Sanctuary</a></p>
+        <p style="margin-top: 20px;">&copy; 2026 The Wildroots Hedge. Walk the Earth in Peace.</p>
+        <hr style="width: 40px; border: 0.5px solid rgba(255,255,255,0.2); margin: 20px auto;">
+    </footer>
+
+</body>
+</html>
